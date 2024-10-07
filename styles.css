@@ -1,9 +1,19 @@
 @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
+
+body {
+    background-image: url('images/decoracion.jpg'); /* Reemplaza con la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
+    font-family: 'Poppins', sans-serif;
+  }
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
