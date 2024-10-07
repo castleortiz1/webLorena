@@ -1,0 +1,41 @@
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.cta-btn {
+  background-color: #ff0f0e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.bg-color1 { background-color: #0086e8; }
+.bg-color3 { background-color: #f1f1f1; }
+.text-color5 { color: white; }
+.text-color1 { color: #0086e8; }
+
+h2, h3 {
+  color: #0086e8;
+}
