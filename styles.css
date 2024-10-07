@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-image: url('images/decoracion.jpg'); /* Reemplaza con la ruta correcta */
+    background-image: url('images/DecoracionOne.jpg'); /* Reemplaza con la ruta correcta */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
