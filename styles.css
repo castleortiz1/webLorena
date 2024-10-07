@@ -1,5 +1,13 @@
 @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
+:root {
+    --color-primary: #0086e8;
+    --color-secondary: #ff0f0e;
+    --color-background: #f1f1f1;
+    --color-text: #000;
+    --color-text-light: #fff;
+  }
+
 html, body {
   height: 100%;
   margin: 0;
@@ -7,13 +15,15 @@ html, body {
 }
 
 body {
-    background-image: url('images/DecoracionOne.jpg'); /* Reemplaza con la ruta correcta */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
-    font-family: 'Poppins', sans-serif;
-  }
+  background-image: url('images/DecoracionOne.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
@@ -24,13 +34,14 @@ header, footer {
 }
 
 .cta-btn {
-  background-color: #ff0f0e;
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 .card {
@@ -39,13 +50,40 @@ header, footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.bg-color1 { background-color: #0086e8; }
-.bg-color3 { background-color: #f1f1f1; }
-.text-color5 { color: white; }
-.text-color1 { color: #0086e8; }
+.theme-toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle-btn {
+  color: var(--color-text-light);
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode .cta-btn {
+  background-color: var(--color-primary);
+}
+
+.bg-color1 { background-color: var(--color-primary); }
+.bg-color3 { background-color: var(--color-background); }
+.text-color5 { color: var(--color-text-light); }
+.text-color1 { color: var(--color-primary); }
 
 h2, h3 {
-  color: #0086e8;
+  color: var(--color-primary);
 }
