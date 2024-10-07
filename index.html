@@ -7,10 +7,9 @@
   <title>Curso de Decoración de Flores</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
-<body class="font-poppins">
-
+<body class="font-poppins" id="body">
   <!-- Header con CTA -->
   <header class="bg-color1 text-color5 py-6 px-10 relative">
     <nav>
@@ -22,7 +21,6 @@
       <a href="[URL a la web]" class="cta-btn">¡Quiero inscribirme!</a>
     </nav>
   </header>
-
   <!-- Sección Qué vas a aprender -->
   <section class="py-8 px-10 bg-color3">
     <h2 class="text-3xl text-center font-semibold mb-6">¿Qué vas a aprender? 🌷</h2>
@@ -49,9 +47,9 @@
       <figure>
         <img src="images/lorenScoto.jpg" alt="Instructor" class="rounded-full mx-auto">
       </figure>
-      <section>
-        <h3 class="text-2xl font-semibold">Lorena Escoto</h3>
-        <p class="mt-2">Con más de 10 años de experiencia en diseño floral para eventos, Ana te enseñará las técnicas y secretos para crear decoraciones florales únicas y espectaculares.</p>
+      <section class="card">
+        <h3 class="text-2xl font-semibold instructor-name">Lorena Escoto</h3> <!-- Clase añadida -->
+        <p class="mt-2 instructor-description"><strong>Con más de 10 años de experiencia en diseño floral para eventos, Lorena te enseñará las técnicas y secretos para crear decoraciones florales únicas y espectaculares.</strong></p> <!-- Clase añadida -->
       </section>
     </article>
   </section>
@@ -182,14 +180,14 @@
   </section>
 
   <!-- Sección Precio -->
-  <section class="py-8 px-10 bg-color3">
+  <section class="card">
     <h2 class="text-3xl text-center font-semibold mb-6">Precio del curso 💸</h2>
     <article class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <section>
         <p>¡Inscríbete hoy y transforma tus eventos con flores! Obtendrás acceso a todas las lecciones, recursos descargables y un certificado de participación.</p>
       </section>
       <section class="card">
-        <p class="text-4xl font-semibold text-color1">€99</p>
+        <p class="text-4xl font-semibold text-color1">$99</p>
         <ul class="mt-4">
           <li>✔️ Acceso a todas las lecciones</li>
           <li>✔️ Certificado de finalización</li>
